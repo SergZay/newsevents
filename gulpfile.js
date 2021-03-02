@@ -15,8 +15,8 @@ gulp.task('sass', function(){
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('wow-css', function(){
-    return gulp.src('node_modules/wowjs/css/libs/animate.css')
+gulp.task('bootstrap-grid', function(){
+    return gulp.src('node_modules/bootstrap/dist/css/bootstrap-grid.css')
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/css'));
